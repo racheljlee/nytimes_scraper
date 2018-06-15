@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #F2F6D0
+    }
+
+    .jumbotron {
+      background: url(https://orig00.deviantart.net/87d3/f/2015/288/6/f/fondo_by_anndesingsandedits-d9d6fbc.jpg) fixed no-repeat;
+      background-size: 100%;
+      text-align: center;
+    }
+    .whiteoverlay {
+      background: rgba(255,255,255,.8);
+      padding: 30px;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 700px;
+    }
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: #FCF5C7;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="whiteoverlay">
+        <img src="https://g1.nyt.com/assets/homepage/20180614-182902/images/foundation/logos/nyt-logo-379x64.png">
+        <h3>Scraping with Mongoose</h3>
+      </div>
+    </div>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
